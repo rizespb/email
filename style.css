@@ -108,10 +108,14 @@ body {
 .statisticsTable {
   display: flex;
   flex-direction: column;
-
+  row-gap: 16px;
   list-style: none;
+}
 
-  overflow-x: scroll;
+@media (max-width: 500px) {
+  .statisticsTable {
+    overflow-x: scroll;
+  }
 }
 
 .statistic {
@@ -120,7 +124,6 @@ body {
   grid-template-columns: 20px 1fr 50px 82px 116px;
   align-items: center;
   min-width: 400px;
-  height: 32px;
   color: #000000;
 }
 

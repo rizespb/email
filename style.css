@@ -19,7 +19,7 @@ body {
 
 .header {
   display: grid;
-  padding: 40px 40px 0;
+  padding: 40px 40px 8px;
   grid-template-columns: 1fr min-content;
   grid-template-areas:
     'primaryHeading logo'
@@ -94,6 +94,7 @@ body {
 }
 
 .detail__content {
+  margin-bottom: 6px;
   font-size: 32px;
   font-style: italic;
   line-height: 37px;
@@ -123,6 +124,10 @@ body {
 .statistic--bold {
   font-weight: 700;
   color: inherit;
+}
+
+.statistic__item--alignCenter {
+  text-align: center;
 }
 
 .statistic__progressBar {
@@ -162,7 +167,7 @@ body {
 }
 
 .footer {
-  padding: 0 40px 40px;
+  padding: 0 40px 100px;
 
   font-family: Helvetica, sans-serif;
 }

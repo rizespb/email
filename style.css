@@ -22,8 +22,8 @@ body {
   padding: 40px 40px 8px;
   grid-template-columns: 1fr min-content;
   grid-template-areas:
-    'primaryHeading logo'
-    'secondaryHeading logo';
+    'primaryTitle logo'
+    'secondaryTitle logo';
 
   background: linear-gradient(180deg, #bbcbff 0%, rgba(255, 255, 255, 0) 100%);
 
@@ -33,14 +33,14 @@ body {
   line-height: 45px;
 }
 
-.header__primaryHeading {
-  grid-area: primaryHeading;
+.header__primaryTitle {
+  grid-area: primaryTitle;
 
   font-weight: 700;
 }
 
-.header__secondaryHeading {
-  grid-area: secondaryHeading;
+.header__secondaryTitle {
+  grid-area: secondaryTitle;
 
   font-weight: 400;
 }
@@ -142,7 +142,7 @@ body {
   border-radius: 20px;
 }
 
-.explanation__heading {
+.explanation__title {
   font-size: 14px;
   line-height: 16px;
   vertical-align: text-bottom;

@@ -108,16 +108,19 @@ body {
 .statisticsTable {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
 
   list-style: none;
+
+  overflow-x: scroll;
 }
 
 .statistic {
   display: grid;
   column-gap: 8px;
   grid-template-columns: 20px 1fr 50px 82px 116px;
-
+  align-items: center;
+  min-width: 400px;
+  height: 32px;
   color: #000000;
 }
 

@@ -36,12 +36,14 @@ body {
 .header__primaryTitle {
   grid-area: primaryTitle;
 
+  font-size: 44px;
   font-weight: 700;
 }
 
 .header__secondaryTitle {
   grid-area: secondaryTitle;
 
+  font-size: 44px;
   font-weight: 400;
 }
 

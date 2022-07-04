@@ -8,97 +8,169 @@
 
   <link rel="stylesheet" href="style.css" type="text/css" />
 
-  <title>Android активность разработки</title>
+  <title>IOS активность разработки</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 500px) {
+      .header {
+        line-height: 33px !important;
+      }
+
+      .header__primaryTitle,
+      .header__secondaryTitle {
+        font-size: 30px !important;
+      }
+
+      .header__logoContainer {
+        width: 68px !important;
+        height: 68px !important;
+      }
+
+      .statisticsTable {
+        overflow-x: scroll;
+        padding-bottom: 10px !important;
+      }
+
+      .detail {
+        padding: 9px 9px !important;
+
+        text-align: center !important;
+      }
+
+      .detail__date {
+        margin-top: 0 !important;
+      }
+
+      .detail__content {
+        margin-bottom: 0 !important;
+
+        font-size: 24px !important;
+      }
+
+      .footer {
+        padding: 0 40px 60px !important;
+      }
+    }
+  </style>
 </head>
 
-<body>
-  <div class="container">
-    <header class="header">
-      <h1 class="header__primaryTitle">android</h1>
-      <h2 class="header__secondaryTitle">активность разработки</h2>
-      <div class="header__logoContainer">
-        <img src="./assets/android-logo.svg" alt="Logo">
+<body style="background-color: #fff; font-family: sans-serif;">
+  <div style="max-width: 600px; margin: 0 auto; font-size: 14px; line-height: 16px; color: #050507;">
+    <header class="header"
+      style="display: grid; column-gap: 10px; grid-template-columns: 1fr min-content; grid-template-areas: 'primaryTitle logo' 'secondaryTitle logo'; padding: 40px 40px 8px; background: linear-gradient(180deg, #a3ffa6 0%, rgba(255, 255, 255, 0) 100%); font-style: italic; line-height: 45px; letter-spacing: 1px;">
+
+      <h1 class="header__primaryTitle" style="grid-area: primaryTitle; font-size: 44px; font-weight: 700;">android</h1>
+      <h2 class="header__secondaryTitle" style="grid-area: secondaryTitle; font-size: 44px; font-weight: 400;">
+        активность разработки</h2>
+
+      <div class="header__logoContainer"
+        style="grid-area: logo; display: flex; justify-content: center; align-items: center; width: 88px; height: 88px; background-color: #fff; border-radius: 20px;">
+        <svg width="54" height="31" viewBox="0 0 54 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M39.4142 22.8125C38.1991 22.8125 37.1953 21.8239 37.1953 20.5948C37.1953 19.3656 38.1991 18.4037 39.4142 18.4037C40.6292 18.4037 41.633 19.3656 41.633 20.5948C41.633 21.8239 40.6292 22.8125 39.4142 22.8125ZM15.1129 22.8125C13.8979 22.8125 12.8941 21.8239 12.8941 20.5948C12.8941 19.3656 13.8979 18.4037 15.1129 18.4037C16.328 18.4037 17.3053 19.3656 17.3053 20.5948C17.3053 21.8239 16.328 22.8125 15.1129 22.8125ZM40.2066 9.42579L44.6178 1.73043C44.8555 1.27619 44.697 0.715066 44.2744 0.474586C43.8254 0.207385 43.2706 0.367706 43.0857 0.821946L38.5689 8.59747C35.014 6.95214 31.1464 6.11312 27.2371 6.13923C23.1957 6.13923 19.3128 7.02099 15.9582 8.57075L11.4942 0.795225C11.4381 0.687029 11.3607 0.591622 11.2668 0.51491C11.1728 0.438198 11.0643 0.381815 10.9479 0.349253C10.8315 0.31669 10.7097 0.30864 10.5902 0.325603C10.4706 0.342565 10.3557 0.384179 10.2527 0.447866C9.80364 0.688346 9.67157 1.24947 9.9093 1.70371L14.2941 9.39907C6.76599 13.5674 1.58877 21.2895 0.822754 30.4277H53.6515C52.9119 21.3162 47.7611 13.5941 40.2066 9.42579Z"
+            fill="#2D2D35" />
+        </svg>
       </div>
     </header>
 
-    <main class="main">
-      <ul class="reportDetails">
-        <li class="detail">
-          <time class="detail__date">16.05-22.05</time>
-          <span class="detail__description">дата</span>
+    <main style="display: flex; flex-direction: column; row-gap: 40px; padding: 40px 40px 20px; letter-spacing: 0.7px;">
+
+      <ul style="display: flex; column-gap: 18px; list-style: none;">
+        <li class="detail"
+          style="display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: space-between; padding: 18px 0; background: #f2f2f6; border-radius: 20px;">
+          <time class="detail__date"
+            style="margin-top: 8px; font-size: 18px; font-style: italic; line-height: 21px;">16.05-22.05</time>
+          <span style="font-size: 12px; line-height: 14px;">дата</span>
         </li>
 
-        <li class="detail">
-          <span class="detail__content">300</span>
-          <span class="detail__description">всего коммитов</span>
+        <li class="detail"
+          style="display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: space-between; padding: 18px 0; background: #f2f2f6; border-radius: 20px;">
+          <span class="detail__content"
+            style="margin-bottom: 6px; font-size: 32px; font-style: italic; line-height: 37px;">300</span>
+          <span style="font-size: 12px; line-height: 14px;">всего коммитов</span>
         </li>
 
-        <li class="detail">
-          <span class="detail__content">115</span>
-          <span class="detail__description">всего МРов</span>
+        <li class="detail"
+          style="display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: space-between; padding: 18px 0; background: #f2f2f6; border-radius: 20px;">
+          <span class="detail__content"
+            style="margin-bottom: 6px; font-size: 32px; font-style: italic; line-height: 37px;">115</span>
+          <span style="font-size: 12px; line-height: 14px;">всего МРов</span>
         </li>
       </ul>
 
-      <ul class="statisticsTable">
+      <ul class="statisticsTable" style="display: flex; flex-direction: column; row-gap: 16px; list-style: none;">
         <li>
-          <div class="statistic statistic--bold">
+          <div
+            style="display: grid; column-gap: 8px; grid-template-columns: 20px 1fr 50px 82px 116px; align-items: center; min-width: 400px; color: #000000; font-weight: 700; color: inherit;">
             <span>#</span>
             <span>Name</span>
-            <span class="statistic__item--alignCenter">MRs</span>
-            <span class="statistic__item--alignCenter">Commits</span>
+            <span style="text-align: center;">MRs</span>
+            <span style="text-align: center;">Commits</span>
             <span>Results</span>
           </div>
         </li>
 
         <li>
-          <div class="statistic">
+          <div
+            style="display: grid; column-gap: 8px; grid-template-columns: 20px 1fr 50px 82px 116px; align-items: center; min-width: 400px; color: #000000;">
             <span>1</span>
             <span>Сидельников Станислав</span>
-            <span class="statistic__item--alignCenter">1</span>
-            <span class="statistic__item--alignCenter">32</span>
-            <span class="statistic__progressBar"></span>
+            <span style="text-align: center;">1</span>
+            <span style="text-align: center;">32</span>
+            <span style="height: 16px; background-color: #6b8cfc; border-radius: 4px;"></span>
           </div>
         </li>
 
         <li>
-          <div class="statistic">
+          <div
+            style="display: grid; column-gap: 8px; grid-template-columns: 20px 1fr 50px 82px 116px; align-items: center; min-width: 400px; color: #000000;">
             <span>2</span>
             <span>Иванов Антон</span>
-            <span class="statistic__item--alignCenter">4</span>
-            <span class="statistic__item--alignCenter">27</span>
-            <span class="statistic__progressBar"></span>
+            <span style="text-align: center;">4</span>
+            <span style="text-align: center;">27</span>
+            <span style="height: 16px; background-color: #6b8cfc; border-radius: 4px;"></span>
           </div>
         </li>
 
         <li>
-          <div class="statistic">
+          <div
+            style="display: grid; column-gap: 8px; grid-template-columns: 20px 1fr 50px 82px 116px; align-items: center; min-width: 400px; color: #000000;">
             <span>3</span>
             <span>Абрикосов Павел </span>
-            <span class="statistic__item--alignCenter">2</span>
-            <span class="statistic__item--alignCenter">27</span>
-            <span class="statistic__progressBar"></span>
+            <span style="text-align: center;">2</span>
+            <span style="text-align: center;">27</span>
+            <span style="height: 16px; background-color: #6b8cfc; border-radius: 4px;"></span>
           </div>
         </li>
       </ul>
 
-      <article class="explanation">
-        <h4 class="explanation__title">⚠️ Как формируется результат
+      <article style="padding: 20px; background-color: #eaf1ff; border-radius: 20px;">
+        <h4 style="font-size: 14px; line-height: 16px;">⚠️ Как формируется результат
         </h4>
         <p>Описание формирования результата, описание формирования результата, описание
           формирования результата.
           Описание формирования результата, описание формирования</p>
       </article>
 
-      <article class="legend">
-        <h3 class="legend__title">Легенда</h3>
+      <article style="display: flex; flex-direction: column; row-gap: 20px;">
+        <h3 style="font-size: 20px; font-weight: 400; font-style: italic; line-height: 23px;">
+          Легенда</h3>
         <p>MRs — описание, что такое мр</p>
         <p>Commits — описание что такое комит</p>
         <p>Ниже нормы — ...</p>
       </article>
     </main>
 
-    <footer class="footer">
-      <h3 class="footer__title">Остались вопросы?</h3>
+    <footer class="footer" style="padding: 0 40px 100px;">
+      <h3
+        style="font-size: 20px; font-weight: 400; font-style: italic; line-height: 23px; margin-bottom: 20px; padding-top: 20px; border-top: 1px solid #f2f2f6;">
+        Остались вопросы?</h3>
       <p>Куда писать, к кому обращаться...</p>
     </footer>
   </div>
